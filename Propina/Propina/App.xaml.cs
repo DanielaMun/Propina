@@ -1,3 +1,4 @@
+using AppPropinas;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,7 +13,7 @@ namespace Propina
 			InitializeComponent();
 
 			MainPage = new MainPage();
-		}
+        }
 
 		protected override void OnStart ()
 		{
