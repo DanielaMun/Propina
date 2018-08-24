@@ -1,11 +1,87 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Propina"
-             x:Class="Propina.MainPage">
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:AppPropinas" x:Class="AppPropinas.MainPage">
 
     <StackLayout>
-        
+
+        <TableView>
+
+            <TableSection
+
+        Title="Datos Generales">
+
+
+
+                <EntryCell
+
+        Label="total"
+
+        Placeholder="Ingrese valor total" x:Name="toti">
+
+                </EntryCell>
+
+                <EntryCell
+
+        Label="propina"
+
+        Placeholder="Ingrese valor de la propina" x:Name="propi">
+
+                </EntryCell>
+
+                <EntryCell
+
+        Label="Numero de personas"
+
+        Placeholder="Ingrese el numero de personas" x:Name="numper">
+
+                </EntryCell>
+
+            </TableSection>
+
+            <TableSection Title="Calcular">
+
+                <ViewCell>
+
+                    <Button Text="Calcular" x:Name="btncalcu">
+
+
+
+                    </Button>
+
+                </ViewCell>
+
+            </TableSection>
+
+            <TableSection Title="Resultado">
+
+                <TextCell 
+
+                    Text="Propina" x:Name="txtpropina">
+
+                </TextCell>
+
+                <TextCell 
+
+                    Text="Total" x:Name="txttotal">
+
+                </TextCell>
+
+                <TextCell 
+
+                    Text="Propina por persona" x:Name="txtpropersona">
+
+                </TextCell>
+
+                <TextCell 
+
+                    Text="Total por persona" x:Name="txttotalpersona">
+
+                </TextCell>
+
+            </TableSection>
+
+        </TableView>
+
     </StackLayout>
 
 </ContentPage>
